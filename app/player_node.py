@@ -2,7 +2,7 @@ from player import Player
 
 
 class PlayerNode:
-    def __init__(self, player):
+    def __init__(self, player: Player):
         self.player = player
         self.nextNode = None
         self.previousNode = None
@@ -36,4 +36,10 @@ class PlayerNode:
         return self.player.uid
 
     def __str__(self):
-        return f"Player is {self.player} \n Next Node is {self.nextNode}  \n Previous Node is {self.previousNode}"
+        return f"Player Name is {self.player.name} \n Player ID is {self.player.uid} \n Next Node is {self.nextNode} \n Previous Node is {self.previousNode}"
+
+
+
+
+
+
