@@ -1,7 +1,7 @@
 import unittest
 from app.play_list import PlayerList
 from app.player import Player
-from app.player_node import PlayerNode
+
 
 
 class TestPlayerList(unittest.TestCase):
