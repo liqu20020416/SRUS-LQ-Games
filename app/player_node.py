@@ -8,29 +8,28 @@ class PlayerNode:
         self.previousNode = None
 
     @property
-    def get_player(self):
+    def theplayer(self):
         return self.player
 
-    @get_player.setter
-    def set_player(self, value):
+    @theplayer.setter
+    def theplayer(self, value):
         self.player = value
 
     @property
-    def get_nextNode(self):
+    def thenext(self):
         return self.nextNode
 
-    @get_nextNode.setter
-    def set_nextNode(self, value):
+    @thenext.setter
+    def thenext(self, value):
         self.nextNode = value
 
     @property
-    def get_previousNode(self):
+    def theprev(self):
         return self.previousNode
 
-    @get_previousNode.setter
-    def set_previousNode(self, value):
+    @theprev.setter
+    def theprev(self, value):
         self.previousNode = value
-
     @property
     def key(self):
         return self.player.uid

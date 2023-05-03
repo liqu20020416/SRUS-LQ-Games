@@ -1,5 +1,9 @@
+
+from player import Player
+
+
 class PlayerBNode:
-    def __init__(self, player):
+    def __init__(self, player: Player):
         self.player = player
         self.left_tree = None
         self.right_tree = None
@@ -23,4 +27,5 @@ class PlayerBNode:
     @get_right_tree.setter
     def set_right_tree(self, value):
         self.right_tree = value
+
 
