@@ -38,6 +38,18 @@ class PlayerList:
         self._tailList = self._tailList.previousNode
         self._tailList.nextNode = None
 
+    def delete_node_based_key(self, key):
+        temp = self._headList
+        while temp:
+            if temp.key == key:
+                if temp.previousNode is not None:
+                    temp.previousNode.nextNode = temp.nextNode
+                if temp.nextNode is not None:
+                    temp.nextNode.previousNode = temp.previousNode
+                break
+            temp = temp.nextNode
+
+
 
 
     def is_it_empty(self):
