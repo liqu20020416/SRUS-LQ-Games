@@ -49,8 +49,16 @@ class PlayerList:
                 break
             temp = temp.nextNode
 
-
-
+    def display(self, forward: bool = True):
+        temp = self._headList
+        if temp is not None:
+            print("The Llist contains:")
+            while temp is not None:
+                print(temp)
+                temp = temp.nextNode
+            print()
+        else:
+            print("This list is empty!")
 
     def is_it_empty(self):
         return self._is_empty
