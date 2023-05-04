@@ -13,18 +13,18 @@ class PlayerBNode:
         return self.player
 
     @property
-    def get_left_tree(self):
+    def left_tree(self):
         return self.left_tree
 
-    @get_left_tree.setter
-    def set_left_tree(self, value):
+    @left_tree.setter
+    def left_tree(self, value):
         self.left_tree = value
 
     @property
-    def get_right_tree(self):
+    def right_tree(self):
         return self.right_tree
 
-    @get_right_tree.setter
+    @right_tree.setter
     def set_right_tree(self, value):
         self.right_tree = value
 
