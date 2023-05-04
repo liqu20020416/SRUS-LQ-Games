@@ -37,6 +37,7 @@ class MyTestCase(unittest.TestCase):
         self.list_case.add_at_tail(self.player_case1)
         self.list_case.delete_at_tail()
         self.assertEqual(self.list_case._tailList.key, self.player_case.uid)
+
     def test_delete_node_based_key(self):
         self.list_case.add_at_head(self.player_case)
         self.list_case.add_at_head(self.player_case1)
