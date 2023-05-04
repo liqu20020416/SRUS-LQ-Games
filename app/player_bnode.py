@@ -1,6 +1,4 @@
-
 from player import Player
-
 
 class PlayerBNode:
     def __init__(self, player: Player):
@@ -28,4 +26,12 @@ class PlayerBNode:
     def right_tree(self, value):
         self._right_tree = value
 
+    def sort_bst(self, name_key):
+        if not name_key:
+            return None
+        mid_player = len(name_key)//2
+        node = PlayerBNode(name_key[mid_player])
+        node.left = self.sort_bst(name_key[:mid_player])
+        node.right = self.sort_bst(name_key[mid_player+1:])
+        return node
 
